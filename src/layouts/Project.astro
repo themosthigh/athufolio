@@ -58,8 +58,14 @@ const { title, description, heroImage } = Astro.props;
     <Header />
     <main>
       <article>
-        <div class="h-[60vw] overflow-hidden rounded-xl">
-          {heroImage && <img src={heroImage} alt="" />}
+        <div
+          class="h-[50vh] max-w-[720px] overflow-hidden rounded-xl mx-auto flex"
+        >
+          {
+            heroImage && (
+              <img src={heroImage} alt="" class="h-full w-full object-cover" />
+            )
+          }
         </div>
 
         <div class="prose">
