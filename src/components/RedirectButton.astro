@@ -1,7 +1,17 @@
 ---
 const { href, text } = Astro.props;
+
+import { ArrowUpRightIcon } from "astro-feather";
 ---
 
-<a href={href} class="px-4 py-2 bg-black rounded-full w-fit text-white text-sm">
-  {text}
+<a
+  href={href}
+  class="px-4 py-2 bg-black rounded-full w-fit text-white text-sm flex gap-2 items-center text-center"
+  target="_blank"
+>
+  <span class="text-white">
+    {text}
+  </span>
+
+  <ArrowUpRightIcon size={20} strokeWidth={2} customClasses="text-white" />
 </a>

@@ -58,12 +58,8 @@ const { title, description, heroImage } = Astro.props;
     <Header />
     <main>
       <article>
-        <div class="hero-image">
-          {
-            heroImage && (
-              <Image width={1020} height={510} src={heroImage} alt="" />
-            )
-          }
+        <div class="h-[60vw] overflow-hidden rounded-xl">
+          {heroImage && <img src={heroImage} alt="" />}
         </div>
 
         <div class="prose">
