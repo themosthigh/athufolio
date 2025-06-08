@@ -1,16 +1,22 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
 import { SITE_TITLE } from "../consts";
+import { links } from "../navigation.ts";
 ---
 
 <header>
   <nav>
     <h2><a href="/">{SITE_TITLE}</a></h2>
+
+    <!-- Site links here  -->
     <div class="internal-links">
-      <HeaderLink href="/">Home</HeaderLink>
-      <HeaderLink href="/blog">Blog</HeaderLink>
-      <HeaderLink href="/resume">Resume</HeaderLink>
+      {
+        links.map((link) => (
+          <HeaderLink href={link.value}>{link.label}</HeaderLink>
+        ))
+      }
     </div>
+
     <div class="social-links">
       <a href="https://m.webtoo.ls/@astro" target="_blank">
         <span class="sr-only">Follow Astro on Mastodon</span>
