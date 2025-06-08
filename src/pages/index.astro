@@ -2,6 +2,7 @@
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import ProfilePreview from "../components/ProfilePreview.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
 
@@ -13,13 +14,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
   <body>
     <Header />
     <main>
-      <p>I’m Michael Mathu Kariuki</p>
-
-      <p>
-        an IT, media and cybersecurity professional dedicated to youth
-        empowerment through secure tech and storytelling. Explore my portfolio
-        and projects below.
-      </p>
+      <ProfilePreview />
     </main>
     <Footer />
   </body>

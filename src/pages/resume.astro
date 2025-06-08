@@ -1,0 +1,15 @@
+---
+import Layout from "../layouts/BlogPost.astro";
+import AboutHeroImage from "../assets/blog-placeholder-about.jpg";
+
+import { Content } from "../content/resume.md";
+---
+
+<Layout
+  title="About Me"
+  description="Lorem ipsum dolor sit amet"
+  pubDate={new Date("June 08 2025")}
+  heroImage={AboutHeroImage}
+>
+  <Content />
+</Layout>

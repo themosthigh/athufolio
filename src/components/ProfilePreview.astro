@@ -1,0 +1,22 @@
+---
+import * as constants from "../consts";
+---
+
+<div class="flex border rounded-2xl bg-black gap-px">
+  <div class="overflow-hidden rounded-2xl">
+    <img src={constants.MY_PICTURE} alt="" class="w-full h-full object-cover" />
+  </div>
+
+  <div class="flex flex-col gap-4 border rounded-2xl bg-white p-4">
+    <p class="text-xl font-bold">{constants.MY_NAME}</p>
+    <p class="text-sm">
+      {constants.MY_TAGLINE}
+    </p>
+
+    <a href="/resume" class="cursor-pointer">
+      <button class="bg-black text-white text-sm rounded-full px-4 py-2">
+        Learn more
+      </button>
+    </a>
+  </div>
+</div>
