@@ -10,3 +10,7 @@ export const MY_NAME = "Michael Mathu";
 export const MY_PROFESSION = "IT, media and Cyber Security professional";
 export const MY_TAGLINE =
   "Dedicated to youth empowerment through secure tech and storytelling";
+
+export const MY_EMAIL = "michael.mathu63@gmail.com";
+export const MY_LINKEDIN = "https://linkedin.com/in/michael-mathu-074226192";
+export const MY_GITHUB = "https://github.com/Michael-Mathu";

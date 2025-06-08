@@ -1,20 +1,27 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import DocumentRoot from "../layouts/DocumentRoot.astro";
+
+import * as constants from "../consts";
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-  </head>
-  <body>
-    <Header />
-    <main>
-      <h1>Contact me</h1>
-    </main>
-    <Footer />
-  </body>
-</html>
+<DocumentRoot>
+  <h1>Work with me</h1>
+
+  <p>
+    <span>
+      If you have any questions, suggestions, or just want to say hello, feel
+      free to reach out via email at {" "}
+    </span>
+    <a href={"mailto:" + constants.MY_EMAIL}>{constants.MY_EMAIL}</a>
+    <span>{" "} or hit me up on {" "}</span>
+
+    <a href={constants.MY_LINKEDIN}>LinkedIn</a>
+  </p>
+  <p>
+    Make sure to check out my Github profile for my latest projects and
+    contributions: {" "}
+    <span>
+      <a href={constants.MY_GITHUB}>Michael-Mathu</a>
+    </span>
+  </p>
+</DocumentRoot>
